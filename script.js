@@ -64,7 +64,11 @@ function getCurrentTime(){
     handSeconds.style.transform = `rotate(${currentSeconds *6}deg)`;
 }
 
-function textAnimation(){
+
+getCurrentTime()
+
+const textHandler=()=>{
+
     let text = document.createElement('h1');
     text.innerHTML="by Qobiljon"
     text.style.width="80px"
@@ -76,15 +80,17 @@ function textAnimation(){
     text.style.fontSize="11px"
     text.style.top="80%"
     text.style.border="1px solid"
+    text.style.cursor="pointer"
+    text.addEventListener("click", function(){
+        
+    })
     wrapper.appendChild(text)
 
-    console.log(wrapper);
+    // console.log(wrapper);
     console.log(text);
 }
 
-textAnimation()
-
-
-getCurrentTime()
+window.addEventListener("load", textHandler)
+// textAnimation()
 
 setInterval(getCurrentTime,1000)
