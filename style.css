@@ -89,6 +89,7 @@ body{
     display: inline-block;
     transform-origin: bottom;
     border-radius: 50%;
+    box-shadow: 0 0 10px #0ef;
 }
 
 .hands-box .hours{
@@ -99,9 +100,22 @@ body{
 .hands-box .hours i{
     width: 8px;
     height: 160px;
-    background: red;
-    transform: rotate(40deg);
+    background: #0ef;
+
 }
+
+/* .hands-box .minutes ::before{
+    width: 25px;
+    height: 25px;
+    content: '';
+    position: absolute;
+    top: 94%;
+    transform:translateX(-35%);
+    background: #0ef;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #0ef;
+
+} */
 
 .hands-box .minutes{
     width: 450px;
@@ -111,19 +125,32 @@ body{
 .hands-box .minutes i{
     width: 8px;
     height: 225px;
-    background: yellow;
-    transform: rotate(230deg);
+    background:#0ef;
 }
 
 .hands-box .seconds{
     width: 480px;
     height: 480px;
 
+
+}
+
+.hands-box .seconds ::before{
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    top: 48%;
+    transform: translateX(-30%);
+    background: #ffff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+
 }
 
 .hands-box .seconds i{
     width: 8px;
-    height: 240px;
+    height: 300px;
     background: white;
-    transform: rotate(160deg);
+    box-shadow: none;
 }
