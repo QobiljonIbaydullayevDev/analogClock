@@ -20,13 +20,15 @@ for(let i=1; i<=12; i++){
     )
 }
 
+console.log(numberElements);
+
 
 numberHours.insertAdjacentHTML("afterbegin", numberElements.join(""));
 
 console.log(numberElements);
 
 for(let i=1; i<=60; i++){
-    
+
     barElements.push(
         `<span style="--index:${i}">
         <p>
@@ -34,6 +36,8 @@ for(let i=1; i<=60; i++){
         </span>`
     )
 }
+
+console.log(barElements);
 
 barSeconds.insertAdjacentHTML("afterbegin", barElements.join(""));
 

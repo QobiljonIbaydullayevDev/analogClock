@@ -45,45 +45,13 @@ body{
     height: 18px;
     transform: translateY(1px);
 }
-.number-hours span p{
-    font-size: 52px;
-    transform: rotate(calc(var(--index)*-30deg));
-    text-align: center;
-    color: #0ef;
-    text-shadow: 0 0 10px #0ef;
-}
-.number-hours span{
-    position: absolute;
-    transform: rotate(calc(var(--index)*30deg));
-    inset: 6px;
-}
-.hands-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.hands-box .hand{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    border-radius: 50%;
-}
-.hands-box .hand i{
-    display: inline-block;
-    transform-origin: bottom;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #0ef;
-}
-.hands-box .hours{
-    width: 320px;
-    height: 320px;
-}
-.hands-box .hours i{
-    width: 8px;
-    height: 160px;
-    background: #0ef;
-}
+.number-hours span p{font-size: 52px;transform: rotate(calc(var(--index)*-30deg));text-align: center;color: #0ef;text-shadow: 0 0 10px #0ef;}
+.number-hours span{position: absolute;transform: rotate(calc(var(--index)*30deg));inset: 6px;}
+.hands-box{display: flex;justify-content: center;align-items: center;position: relative;}
+.hands-box .hand{display: flex;justify-content: center;position: absolute;border-radius: 50%;}
+.hands-box .hand i{display: inline-block;transform-origin: bottom;border-radius: 50%;box-shadow: 0 0 10px #0ef;}
+.hands-box .hours{width: 320px;height: 320px;}
+.hands-box .hours i{width: 8px;height: 160px;background: #0ef;}
 .hands-box .minutes{width: 450px;height: 450px;}
 .hands-box .minutes i{width: 8px;height: 225px;background:#0ef;}
 .hands-box .seconds{width: 480px;height: 480px;}
