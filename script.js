@@ -1,3 +1,5 @@
+const wrapper = document.querySelector('.wrapper')
+
 const numberHours = document.querySelector('.number-hours');
 const barSeconds =document.querySelector('.bar-seconds');
 
@@ -5,6 +7,9 @@ const barSeconds =document.querySelector('.bar-seconds');
 const handHours = document.querySelector('.hand.hours');
 const handMinutes = document.querySelector('.hand.minutes');
 const handSeconds = document.querySelector('.hand.seconds');
+
+
+
 
 const numberElements = [];
 const barElements=[]
@@ -59,7 +64,24 @@ function getCurrentTime(){
     handSeconds.style.transform = `rotate(${currentSeconds *6}deg)`;
 }
 
+function textAnimation(){
+    let text = document.createElement('h1');
+    text.innerHTML="by Qobiljon"
+    text.style.color="white"
+    text.style.position="absolute"
+    text.style.fontSize="11px"
+    text.style.top="80%"
+    wrapper.appendChild(text)
+
+    console.log(wrapper);
+    console.log(text);
+}
+
+textAnimation()
+
 
 getCurrentTime()
 
 setInterval(getCurrentTime,1000)
+
+
