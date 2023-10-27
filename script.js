@@ -67,10 +67,15 @@ function getCurrentTime(){
 function textAnimation(){
     let text = document.createElement('h1');
     text.innerHTML="by Qobiljon"
+    text.style.width="80px"
+    text.style.height="20px"
+    text.style.textAlign="center"
+    text.style.padding=" 2px 0 0 0"
     text.style.color="white"
     text.style.position="absolute"
     text.style.fontSize="11px"
     text.style.top="80%"
+    text.style.border="1px solid"
     wrapper.appendChild(text)
 
     console.log(wrapper);
@@ -83,5 +88,3 @@ textAnimation()
 getCurrentTime()
 
 setInterval(getCurrentTime,1000)
-
-
